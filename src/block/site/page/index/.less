@@ -99,5 +99,13 @@
 		font-weight: 600;
 		.calcFontSize(18, 28, 320, 1680);
 		.calcLineHeight(20, 28, 320, 1680);
+		&.__panel{
+			background: fadeout(@black, 45%);
+			padding: 20px;
+			@media @media-device{
+				margin-top: 25px;
+				display: inline-block;
+			}
+		}
 	}
 }
