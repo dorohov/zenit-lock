@@ -1,0 +1,37 @@
+<div class="{{class}} content-block">
+	<div class="container {{prefix}}container">		
+		<div class="{{prefix}}inner">
+			<div class="{{prefix}}btn-close">
+				<a href="javascript:history.back()" class="btn-site btn-close">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" class="cancel" ]]
+				</a> 
+			</div>
+			<h1 class="heading-site {{prefix}}heading-site">{{heading-page}}</h1>
+			<form action="/reviews-apartment-message.html" class="form-site form-reviews azbn-form-login" data-target-url="/wp-admin/admin-ajax.php" > 
+				<input type="hidden" name="action" value="azbnajax_call" />
+				<input type="hidden" name="method" value="auth" />
+				<input type="hidden" name="type" value="json" />
+				
+				<div class="row {{prefix-block}}row">
+					<div class="cols {{prefix-block}}col-6">
+						<div class="form-inline__input">
+							<label class="form-inline__label _phone">Логин</label>
+							<input type="text" class="form-inline__form-control _name form-control " name="login" >
+						</div>	
+					</div>
+					<div class="cols {{prefix-block}}col-6">
+						<div class="form-inline__input">
+							<label class="form-inline__label _phone">Пароль</label>
+							<input type="password" class="form-inline__form-control _phone form-control " name="pass" > 
+						</div>	
+					</div>
+					<div class="cols {{prefix-block}}col-12">
+						<div class="{{prefix-block}}btn-block">
+							<button type="submit" class="btn-site btn-submit {{prefix-block}}btn">Войти</button>
+						</div>	 
+					</div>
+				</div>
+			</form>   
+		</div>
+	</div>
+</div>

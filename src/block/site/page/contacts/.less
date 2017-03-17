@@ -1,0 +1,77 @@
+.contacts-page-content{
+}
+._cpc__{
+	&heading-block{
+		padding-top: 3vw;
+		@media @media-device{margin-bottom: 40px;}
+	}
+	&row{
+		flex-wrap: wrap;
+	}
+	&cols{
+		@media @media-device{width: 100%; margin-bottom: 4vw}
+		@media @media-size-sm-l{width: 50%}
+		@media @media-screen{
+			width: 50%;
+		}
+	}
+	&office-row{
+		flex-wrap: wrap;
+	}
+	&office-cols-left{
+		@media @media-size-xs-p{width: 100%}
+		@media @media-notsmart{margin-right: 40px;}	
+	}	
+	&office-cols-right{
+		//@media @media-size-xs{width: 100%;}
+	}
+	&office-item{
+		line-height: @b-lh + 6px; //30px
+		margin-bottom: 10px;
+		&.icon{
+			position: relative;
+			padding-left: 50px;    
+			margin-bottom: 40px;
+			&:nth-child(2){margin-bottom: 35px;}
+			@media @media-size-xs{
+				padding-left: 25px;  
+			}
+			@media @media-size-xs-p{  
+				margin-bottom: 15px;
+				&:nth-child(2){margin-bottom: 25px;}
+			}
+		}
+		&._address{
+			span{
+				display: block;
+				font-weight: 700;
+				font-size: @b-fs + 4px; //20px;
+			}
+		}
+		._heading{
+			font-weight: 700;
+			font-size: @b-fs + 4px; //20px;
+			line-height: @b-lh + 4px;
+		}
+	}
+	&icon-call{
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@media @media-size-xs{
+			width: 16px;
+			height: 16px;
+		}
+	}
+	&map{
+		width: 100%;
+		height: 100%;
+		@media @media-size-xs-p{min-height: 350px;}
+		@media @media-size-xs-l{min-height: 250px;}
+		@media @media-size-sm{min-height: 500px;}
+		@media @media-screen{min-height: 25vw}
+	}
+}

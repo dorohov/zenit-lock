@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 
+	</head>
+	<body class="second-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/editor.html" 
+			class="navbar-site second editor"  
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/page/docs-item/adm.html" 
+			class="docs-item-content-block"
+			prefix="_dicb__" 
+			prefix-block="docs-block__"
+			heading-page="Документы"
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html" 
+			class="footer-site second"
+			prefix="_fs__" 
+		]]
+
+		[[azbntple tpl="/src/block/site/default/modals/editor.html" prefix="_mse__"]]
+
+		[[azbntple tpl="/src/block/site/default/head/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/head/scrollbar.html" ]]
+	</body>
+</html> 

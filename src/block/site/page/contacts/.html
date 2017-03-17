@@ -1,0 +1,44 @@
+<div class="{{class}} content-block">
+	<div class="container {{prefix}}container">		
+		<h1 class="heading-site {{prefix}}heading">{{heading-page}}</h1>
+		<div class="{{prefix}}inner">
+			<div class="row {{prefix}}row">
+				<div class="cols {{prefix}}cols">					
+					<h2 class="heading-block {{prefix}}heading-block">Офис продаж</h2>
+					<div class="row {{prefix}}office-row">			
+						<div class="cols {{prefix}}office-cols-left">
+							<div class="{{prefix}}office-item icon">
+								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="call" class="{{prefix}}icon-call" ]]
+								<div><a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a></div>
+							</div> 
+							<div class="{{prefix}}office-item icon">
+								[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="email" class="{{prefix}}icon-call" ]]
+								<div><a href="mailto:{{contacts.email}}">{{contacts.email}}</a></div>
+							</div>
+							<div class="{{prefix}}office-item _address">
+								{{contacts.address}}
+							</div>
+						</div>		
+						<div class="cols {{prefix}}office-cols-right">
+							<div class="{{prefix}}office-item">
+								<div class="_heading">ПН-ПТ</div>
+								<div>08:30 - 19:00</div>
+							</div>
+							<div class="{{prefix}}office-item">
+								<div class="_heading">СБ</div>
+								<div>10:00 - 15:00</div>
+							</div>
+							<div class="{{prefix}}office-item">
+								<div class="_heading">ВС</div>
+								<div>Выходной</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="cols {{prefix}}cols">
+					<div class="{{prefix}}map" id="2gis-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 

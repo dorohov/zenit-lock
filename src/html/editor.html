@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 
+	</head>
+	<body class="second-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/editor.html" 
+			class="navbar-site second editor"  
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/page/editor/.html" 
+			class="editor-page-content"
+			prefix="_epc__" 
+			prefix-block="docs-block__" 
+			heading-page="Редактор"
+		]]
+
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html" 
+			class="footer-site second"
+			prefix="_fs__" 
+		]]		
+		
+		[[azbntple tpl="/src/block/site/default/head/script.html" ]]
+	</body>
+</html> 
