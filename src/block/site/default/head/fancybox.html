@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="{{url-path-css}}/fancybox.jquery.css" media="screen" />	
+<script src="{{url-path-plugins}}/fancybox/lib/jquery.mousewheel-3.0.6.pack.min.js"></script>
+<script src="{{url-path-js}}/fancybox.jquery/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+			prevEffect : 'fade',
+			nextEffect : 'fade',
+			padding: 36,
+			margin: 5,
+		    tpl: {
+				closeBtn : '<a class="fancybox-item fancybox-close" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#cancel"></use></svg></a>',
+				next     : '<a class="fancybox-nav fancybox-next" href="javascript:;"><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#arrow-next"></use></svg></a>',
+				prev     : '<a class="fancybox-nav fancybox-prev" href="javascript:;"><span><svg class="icon-svg" role="img"><use xlink:href="/img/svg/sprite.svg#arrow-back"></use></svg></span></a>',},
+			afterLoad  : function () {
+	            $.extend(this, {
+	                aspectRatio : false,
+	                type    : 'html',
+	                width   : '100%',
+	                height  : '100%',
+	                content : '<div class="fancybox-image-full" ><div><img src="' + this.href + '" alt=""></div></div>'
+	            });
+	        }
+		});
+	})
+</script>

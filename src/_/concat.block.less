@@ -1386,6 +1386,102 @@ textarea._frs__form-control{
 }
 .about-content-block{}
 ._acb__{
+	&heading{
+		@media @media-screen{
+			margin-bottom: 10px;
+		}
+	}
+	&heading-block{
+		.calcFontSize(20, 27, 320, 1680);
+		.calcLineHeight(31, 38, 320, 1680);	
+		@media @media-screen{margin-bottom: 0}	
+	}
+	&heading-row{
+		align-items: center;
+		@media @media-device{flex-wrap: wrap;}
+		@media @media-screen{margin-bottom: 2vw;}	
+	}
+	&heading-cols{
+		@media @media-device{width: 100%;}
+		@media @media-screen{
+			width: 50%;			
+		}
+	}
+	&count-row{
+		justify-content: space-between;
+		@media @media-screen{
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+	}
+	&count-cols{
+		@media @media-screen{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	&count-item{
+		font-size: @b-fs - 2px;
+		line-height: @b-lh - 8px;
+		text-align: center;
+		@media @media-size-xs{
+			margin-bottom: 20px;
+		}
+	}
+	&count-num{
+		padding: 4px 0;
+		color: @blue;
+		font-weight: 900;
+		.calcFontSize(30, 50, 320, 1680);
+		.calcLineHeight(24, 44, 320, 1680);
+		//letter-spacing: -2px;
+	}
+	&gallery-row{
+		flex-wrap: wrap;
+		margin-right: -7.5px;
+		margin-left: -7.5px;
+	}
+	&gallery-cols{
+		padding-left: 7.5px;
+		padding-right: 7.5px;
+		padding-bottom: 15px;
+		&.item1{
+			width: 53%;
+		}
+		&.item2{
+			width: 47%;
+		}
+		&.item3{
+			width: 37%;
+		}
+		&.item4{
+			width: 63%;
+		}
+		&.item5{
+			width: 63%;
+		}
+		&.item6{
+			width: 37%;
+		}
+		&.item7{
+			width: 63%; 
+		}
+		&.item8{
+			width: 37%;
+		}
+	}
+	&gallery-heading{
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		.calcFontSize(16, 22, 320, 1680);
+		.calcLineHeight(20, 26, 320, 1680);
+		padding: 1.5vw 2vw;
+	}
 	&inner{
 		padding-top: 3vw;
 	}
@@ -1398,13 +1494,21 @@ textarea._frs__form-control{
 		@media @media-size-sm-l{width: 50%}
 		@media @media-screen{
 			width: 50%;
-			margin-bottom: 7.5vw;
+			margin-bottom: 3.5vw;
 		}
 	}
 	&item{
 		&:last-child{margin-bottom: 0}
 		@media @media-device{margin-bottom: 3vw}
 		@media @media-screen{margin-bottom: 2vw;}
+		&.gallery1{
+			margin-top: 2.5vw;
+			max-width: 675px;
+		}
+		&.gallery2{
+			max-width: 675px;
+			margin-top: 6.5vw;
+		}
 	}
 	&item-heading{
 		.calcFontSize(18, 22, 320, 1680);
