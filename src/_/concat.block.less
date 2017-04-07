@@ -2764,6 +2764,32 @@ textarea._frs__form-control{
 .layouts-page-content{
 }
 ._lpc__{
+	&heading{
+		@media @media-screen{margin-bottom: 4.5vw;}		
+	}
+	&gallery-block{
+		@media @media-device{margin-bottom: 40px;}
+		@media @media-screen{margin-bottom: 3vw;}
+	}
+	&gallery-heading{
+		text-transform: uppercase;
+		position: relative;
+		font-weight: 900;
+		padding-left: 50px;
+		.calcFontSize(22, 38, 320, 1680);
+		.calcLineHeight(32, 48, 320, 1680);
+		@media @media-device{margin-bottom: 20px;}
+		@media @media-screen{margin-bottom: 1.5vw;}
+		&::before{
+			content: '';
+			width: 35px;
+			height: 2px;
+			background: @blue;
+			position: absolute;
+			top: ~"calc(50% - 2px)";
+			left: 0;
+		}
+	}
 	&gallery{
 		display: flex;
 		flex-wrap: wrap;
@@ -2775,6 +2801,7 @@ textarea._frs__form-control{
 		}
 	}
 	&item{
+		display: block;
 		cursor: pointer;
 		padding-left: 15px;
 		padding-right: 15px;
