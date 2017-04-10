@@ -2726,7 +2726,7 @@ textarea._frs__form-control{
 			
 			&.transparent {
 				background: transparent;
-				
+				padding: 0;
 				@media @media-size-xs {
 					width:100%;
 				}
@@ -2736,20 +2736,17 @@ textarea._frs__form-control{
 				
 				.wait-text {
 					color:@white;
-					font-size:140px;
-					text-align:right;
 					text-transform:uppercase;
 					font-family:@open;
 					font-weight: 100;
-					
-					@media @media-size-xs {
-						margin-top: 75px;
-						text-align: center;
+					font-size: 140px;
+					.calcFontSize(80, 130, 320, 1680);
+					.calcLineHeight(80, 130, 320, 1680);
+					@media @media-device {
+						margin-top: 40px;
 					}
-					
-					@media @media-size-sm {
-						margin-top: 110px;
-						text-align: center;
+					@media @media-screen{
+						text-align: right;
 					}
 				}
 			}
