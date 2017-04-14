@@ -331,7 +331,7 @@
 	&.index{
 		background: @white;
 		color: @black;
-		@media @media-notsmart{
+		@media @media-screen{
 			position: absolute;
 			z-index: 100;
 			bottom: 0;
@@ -2654,7 +2654,7 @@ textarea._frs__form-control{
 		min-height:  ~"calc(100vh - 76px - 278px)";
 	}
 	@media @media-size-xs-p{
-		padding: 30px 0 0;
+		padding: 30px 0;
 		&::after{
 			position: relative;
 			width: 300px;
@@ -2670,7 +2670,7 @@ textarea._frs__form-control{
 		}
 	}
 	@media @media-size-sm{
-	    height: ~"calc(100vh - 105px - 161px)";
+	    min-height: ~"calc(100vh - 105px - 161px)";
 	    padding: 40px 0;
 	}
 	@media @media-size-sm-l{
@@ -2758,6 +2758,39 @@ textarea._frs__form-control{
 		}
 	}
 }
+/*
+._sp-form__{
+	&form{
+	    display: block;
+    	padding: 0;
+    	width: 260px;
+   		max-width: 100%;
+   		margin: 30px auto 0;
+		.calcFontSize(12, 14, 320, 1680);
+		.calcLineHeight(20, 22, 320, 1680);
+	}		
+	&text{		
+		color: @white;
+		text-align: center;
+		.calcFontSize(14, 16, 320, 1680);
+		.calcLineHeight(22, 24, 320, 1680);
+		margin-bottom: 20px;
+	}
+	&input{
+		margin-bottom: 10px;
+	}
+	&btn{
+		padding-top: 20px; 
+	}
+	&button{
+		border-radius: 4px; 
+		background-color: #0089bf; 
+		color: #ffffff; 
+		width: auto; 
+		font-weight: bold;
+		border: 0;
+	}
+}*/
 .layouts-page-content{
 }
 ._lpc__{

@@ -1,5 +1,8 @@
 {
 	"contacts":{
+		"domain":"panorama-zenit.ru",
+		"domain_link":"http://panorama-zenit.ru/",
+		"agreement_page":"agreement",
 		"name":"Зенит",
 		"name_street":"ул. Московская, д.76",
 		"email":"sales@zenit-orel.ru",

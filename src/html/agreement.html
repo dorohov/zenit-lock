@@ -3,29 +3,30 @@
 	<head>
 		[[azbntple 
 			tpl="/src/block/site/default/head/.html" 
-			title="Купить квартиру от застройщика - Михалицына, 1"
+			title="Описание дома по ул. Михалицына, 1"
 			description="Новый 17-этажный жилой дом по ул. Михалицына, 1."
-		]] 		
+		]] 	
 	</head>
-	<body class="index-page">
+	<body class="second-page">
 		[[azbntple 
 			tpl="/src/block/site/default/navbar/.html" 
-			class="navbar-site index" 
+			class="navbar-site second" 
 		]]
 
 		[[azbntple 
-			tpl="/src/block/site/page/index/.html" 
-			class="index-content-block"
-			prefix="_icb__" 
-			prefix_form="_sp-form__"
+			tpl="/src/block/site/page/agreement/.html" 
+			class="text-content-block"
+			prefix="_tcb__" 
+			heading_page="Соглашение об обработке персональных данных сайтом panorama-zenit.ru"
 		]]
 
 		[[azbntple 
 			tpl="/src/block/site/default/footer/.html" 
-			class="footer-site index"
+			class="footer-site second"
 			prefix="_fs__" 
 		]]
 
 		[[azbntple tpl="/src/block/site/default/head/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/head/fancybox.html" ]]
 	</body>
 </html> 
