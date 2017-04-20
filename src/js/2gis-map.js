@@ -2,7 +2,7 @@ if(document.getElementById('2gis-map')) {
 	var map;
 	DG.then(function () {
 		map = DG.map('2gis-map', {
-			center: [52.988692, 36.119842],
+			center: [52.971943, 36.090293],
 			zoom: 17,
 			scrollWheelZoom: false,
 			fullscreenControl: false
@@ -14,6 +14,6 @@ if(document.getElementById('2gis-map')) {
 			iconAnchor: [14, 125],
 			popupAnchor: [0, 0]
 		});
-		DG.marker([52.988337, 36.119565], {icon: myIcon}).addTo(map).bindPopup('ул. Михалицына, д.1');
+		DG.marker([52.971943, 36.090293], {icon: myIcon}).addTo(map).bindPopup('ул. Старо-Московская, д.10');
 	});
 } 
