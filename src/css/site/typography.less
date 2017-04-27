@@ -11,6 +11,20 @@ h1, h2, h3, h4, h5, h6{
 }
 i, em{font-style: italic;}
 b, strong{font-weight: 700}
+.heading-site-row{
+	justify-content: space-between;
+	align-items: center;
+	@media @media-device{
+		flex-wrap: wrap;
+		.cols{width: 100%;} 
+	}
+	@media @media-screen{
+		.heading-site{margin-bottom: 0}
+	}
+	
+    @media @media-device{margin-bottom: 30px}
+    @media @media-screen{margin-bottom: 1.7vw}
+}
 .heading-site{
 	position: relative;
 	font-weight: 800;
