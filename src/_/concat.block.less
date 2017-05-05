@@ -818,6 +818,17 @@ textarea._frs__form-control{
 ._mse__{
 	&{}
 }
+._msr__{
+	&body{
+		background: none;
+		.btn-close{
+			background: @white;
+			width: 40px;
+			height: 40px;
+			padding: 10px;
+		}
+	}
+}
 .navbar-site{
 	transition: @transition-site;
 	@media @media-device{
@@ -2797,6 +2808,23 @@ textarea._frs__form-control{
 		.line__adr {
 			font-size:21px;
 			margin-top:10px;
+		}
+	}
+	&btn{
+		background: rgba(208,0,38,.56);
+		border: 2px solid @white;
+		margin-top: 25px;
+		padding: 15px 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		border-radius: 35px;
+		&, &:focus{
+			color: @white;
+		}
+		&:hover{
+			color: @blue;
+			background: @white;
 		}
 	}
 }

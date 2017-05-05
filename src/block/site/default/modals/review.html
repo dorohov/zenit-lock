@@ -1,22 +1,10 @@
-<div class="{{class}}">
-	<div class="container {{prefix}}container">
-		<div class="{{prefix}}flex">
-			<div class="{{prefix}}inner">
-				<h1 class="{{prefix}}heading">
-					Жилой комплекс<br>бизнес-класса<br>«Панорама»
-				</h1>
-				<div class="{{prefix}}text">
-					<p>Флагманский объект компании «Зенит»</p>
-					<p class="line__adr" >г. Орел, ул. Михалицына, 1</p>
-				</div> 
-				<div>
-					<button type="button" class="btn-site {{prefix}}btn" data-toggle="modal" data-target="#modal-news-reviews ">Подписаться на новости</button>
-				</div>
-			</div>
-			<div class="{{prefix}}text __panel transparent">
-				<!--<img src="/wp-content/themes/azbnbasetheme/img/default/wait.png" class="" style="max-width:100%;width:453px;margin:0 0 0 auto;" class="img-responsive">-->
-				<div class="wait-text" >Старт продаж</div>
-				<!--<div class="form-outer current sp-force-hide"> 
+<div class="modal fade" id="modal-news-reviews" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{prefix_modal}}dialog">
+		<div class="modal-content {{prefix_modal}}content">
+			<div class="modal-body {{prefix_modal}}body" >
+				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="cancel" class="icon-cancel" ]]</button>
+				<div class="modal-block">
+					<div class="form-outer current sp-force-hide"> 
 				 	<style id="subscribe-form-style" class="">
 				 		/*.sp-force-hide {display: none;}*/
 				 		.sp-form[sp-id="41979"] {}
@@ -109,7 +97,8 @@
 						</div>
 						<div class="sp-link-wrapper sp-brandname__left " ></div> 
 					</div> 
-				</div>-->
+					</div>
+				</div> 
 			</div>
 		</div>
 	</div>
