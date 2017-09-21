@@ -194,3 +194,34 @@
 		}
 	}
 }
+.modal-video__{
+	&dialog {
+		width: 100%;
+		height: 100%;
+		.modal-video__modal.in &{
+		    transform: translate(0,0%);
+		}
+	}
+	&content {
+		padding: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+	&body {
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&btn-close{
+		background-color: @white;
+		padding: 9px;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
+}

@@ -163,6 +163,42 @@
 			background: @white;
 		}
 	}
+	&btn-video{
+		font-weight: 700;
+		position: relative;
+		padding-left: 65px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top: 25px;
+		&, &:focus{
+			color: #d90065;
+		}
+		&:hover{
+			color: @white;
+		}
+	}
+	&btn-video-icon{
+		border: 4px solid #d90065;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		border-radius: 50%;
+		padding: 10px 5px 10px 10px;
+		text-align: center;
+		width: 48px;
+		height: 48px;
+		transform: translateY(-50%);
+		transition: @transition-site;
+		svg{
+			width: 100%;
+			height: 100%;
+			fill: @white;
+		}
+		._icb__btn-video:hover &{
+			background-color: #d90065;
+		}
+	}
 }
 /*
 ._sp-form__{

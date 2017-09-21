@@ -829,6 +829,37 @@ textarea._frs__form-control{
 		}
 	}
 }
+.modal-video__{
+	&dialog {
+		width: 100%;
+		height: 100%;
+		.modal-video__modal.in &{
+		    transform: translate(0,0%);
+		}
+	}
+	&content {
+		padding: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+	&body {
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&btn-close{
+		background-color: @white;
+		padding: 9px;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
+}
 .navbar-site{
 	transition: @transition-site;
 	@media @media-device{
@@ -2845,6 +2876,42 @@ textarea._frs__form-control{
 		&:hover{
 			color: @blue;
 			background: @white;
+		}
+	}
+	&btn-video{
+		font-weight: 700;
+		position: relative;
+		padding-left: 65px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top: 25px;
+		&, &:focus{
+			color: #d90065;
+		}
+		&:hover{
+			color: @white;
+		}
+	}
+	&btn-video-icon{
+		border: 4px solid #d90065;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		border-radius: 50%;
+		padding: 10px 5px 10px 10px;
+		text-align: center;
+		width: 48px;
+		height: 48px;
+		transform: translateY(-50%);
+		transition: @transition-site;
+		svg{
+			width: 100%;
+			height: 100%;
+			fill: @white;
+		}
+		._icb__btn-video:hover &{
+			background-color: #d90065;
 		}
 	}
 }
